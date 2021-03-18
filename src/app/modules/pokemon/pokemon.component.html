@@ -1,0 +1,9 @@
+<div class="box_container p-5">
+  <div *ngFor="let item of pokemons" class="box">
+    <div class="image">
+      <img [src]="getImage(item?.id)" />
+    </div>
+    <p>{{item?.name}}</p>
+    <p>{{item?.id}}</p>
+  </div>
+</div>
